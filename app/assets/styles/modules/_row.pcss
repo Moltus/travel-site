@@ -1,6 +1,6 @@
 .row {
 
-  &__md {
+  &--cols-5-7 {
 
     @mixin atMedium {
       display: grid;
@@ -16,5 +16,20 @@
       margin-bottom: 0;
     }
   }
+
+  &--cols-6-6 {
+
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+    }
+    
+  }
+
+  /* &__col-6--sm-width {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
   
 }
