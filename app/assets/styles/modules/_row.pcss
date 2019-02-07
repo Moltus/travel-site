@@ -1,11 +1,19 @@
 .row {
 
   &__md {
-    
+
     @mixin atMedium {
       display: grid;
-      grid-template-columns: 4fr 8fr;
+      grid-template-columns: 5fr 7fr;
       grid-gap: 65px;
+    }
+  }
+
+  &__b-margin-until-md {
+    margin-bottom: 1rem;
+
+    @mixin atMedium {
+      margin-bottom: 0;
     }
   }
   
